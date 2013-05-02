@@ -11,9 +11,10 @@ namespace WarPlaneGame
         // Image of the player Plane
         private Bitmap playerPlaneImg;
         // Player Life and Speed and List of Active Rockets
-        private int playerLife; // { get; set; }
-        private int playerSpeed;// { get; set; }
+        private int playerLife; 
+        private int playerSpeed;
         private List<Rocket> FiredRockets;
+        private List<MashineGun> FiredBullets;
        //Start-up Poissitions 
         private int X; 
         private int Y;
@@ -27,8 +28,9 @@ namespace WarPlaneGame
             playerPlaneImg = new Bitmap("D:\\documents\\visual studio 2012\\Projects\\WarPlaneGame\\WarPlaneGame\\Resources\\img\\MIG-small.png");
          // Set Player Life and Speed and List Active Rockets
             playerLife = 5;
-            playerSpeed = 10;
+            playerSpeed = 20;
             FiredRockets = new List<Rocket>();
+            FiredBullets = new List<MashineGun>();
          //Set start-up positions
             X = formWidth / 2;
             Y = formHeight - playerPlaneImg.Size.Height-15;
@@ -69,7 +71,16 @@ namespace WarPlaneGame
         {
             FiredRockets.Remove(FiredRockets[i]);
         }
-
+        //Fire a bullet
+        public void fireBullet()
+        {
+            FiredBullets.Add(new MashineGun(X + 30, Y));
+        }
+        //Delete a Bullet
+        public void removeBullet(int i)
+        {
+            FiredBullets.Remove(FiredBullets[i]);
+        }
 
 
         // Getters and Setters
@@ -117,6 +128,14 @@ namespace WarPlaneGame
         public void moveUpFiredRocket(int i)
         {
             FiredRockets[i].moveRocket();
+        }
+        public List<MashineGun> getFiredBullets()
+        {
+            return FiredBullets;
+        }
+        public void moveUpBullets(int i)
+        {
+            FiredBullets[i].moveBullets();
         }
     }
 }

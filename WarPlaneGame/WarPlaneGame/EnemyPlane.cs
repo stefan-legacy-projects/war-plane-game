@@ -12,16 +12,17 @@ namespace WarPlaneGame
         private int X;
         private int Y;
         private int speed;
+        private int life;
 
-        public EnemyPlane(int maxWidth,int x, int y)
+        public EnemyPlane(int x, int y)
         {
             enemyPlaneImg = new Bitmap("D:\\documents\\visual studio 2012\\Projects\\WarPlaneGame\\WarPlaneGame\\Resources\\img\\Enemy1-small.png");
-            Random random = new Random();
-            X = x; //int.Parse(random.Next(maxWidth-enemyPlaneImg.Size.Width).ToString());
-            Y = y;// -enemyPlaneImg.Size.Height;
+            X = x; 
+            Y = y;
             speed = 5;
+            life =2 ;
         }
-
+// Move the Plain
         public bool enemyPlaneOnTheMove(int maxHeight)
         {
             if (Y + speed < maxHeight)
@@ -30,6 +31,12 @@ namespace WarPlaneGame
                 return true;
             }
             return false;
+        }
+//Plain lose life
+        public void LoseLife()
+        {
+            life = life - 1;
+            enemyPlaneImg = new Bitmap("D:\\documents\\visual studio 2012\\Projects\\WarPlaneGame\\WarPlaneGame\\Resources\\img\\EnemyBurn.png"); 
         }
 
         //Getters and Setters
@@ -56,6 +63,10 @@ namespace WarPlaneGame
         public int getSpeed()
         {
             return speed;
+        }
+        public int LIFE()
+        {
+            return life;
         }
        
 

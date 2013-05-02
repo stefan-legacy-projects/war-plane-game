@@ -16,9 +16,13 @@ namespace WarPlaneGame
             score = 0;
         }
         // Update the score 
-        public void UpdateScore()
+        public void UpdateMissileScore()
         {
             score = score + 10;
+        }
+        public void UpdateBulletScore()
+        {
+            score = score + 50;
         }
         // Get the Score
         public int getScore()
