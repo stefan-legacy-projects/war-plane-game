@@ -14,3 +14,8 @@ This is my first 2D game. It's a airplane shooter game.
 
 The game is not yet ready. I am working every day to fix some of the bugs.
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+------------------------------------------------------------------------------------------------------------------------
+The commitments start from 3-rd Update because I have problems with GitHub (I wasn't used to work there), so the
+update 1 and update 2 are in update 3. 
+Don't worry everything is here ^_^ .
+------------------------------------------------------------------------------------------------------------------------
