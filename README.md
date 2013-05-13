@@ -1,7 +1,7 @@
-WarPlaneGame
+WarPlaneGame - Faculty Project
 =============
 
-Faculty Project
+
 ![Settings Window](https://raw.github.com/scvetkovski/WarPlaneGame/master/WarPlaneGame/WarPlaneGame/Resources/img/Intro.png)
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 This is my first 2D game. It's a airplane shooter game. 
