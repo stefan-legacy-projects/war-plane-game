@@ -2,7 +2,7 @@ WarPlaneGame
 =============
 
 Faculty Project
-
+![Settings Window](https://raw.github.com/scvetkovski/WarPlaneGame/master/WarPlaneGame/WarPlaneGame/Resources/img/Intro.png)
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 This is my first 2D game. It's a airplane shooter game. 
 -There is only one level.
@@ -22,5 +22,3 @@ Don't worry everything is here ^_^ .
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 This Repo have been compromised.    05/04/2013
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-https://raw.github.com/scvetkovski/WarPlaneGame/master/WarPlaneGame/WarPlaneGame/Resources/img/Intro.png
-![Settings Window](https://raw.github.com/scvetkovski/WarPlaneGame/master/WarPlaneGame/WarPlaneGame/Resources/img/Intro.png)
