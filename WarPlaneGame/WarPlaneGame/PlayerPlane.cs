@@ -28,7 +28,7 @@ namespace WarPlaneGame
             playerPlaneImg = new Bitmap("D:\\documents\\visual studio 2012\\Projects\\WarPlaneGame\\WarPlaneGame\\Resources\\img\\MIG-small.png");
          // Set Player Life and Speed and List Active Rockets
             playerLife = 5;
-            playerSpeed = 20;
+            playerSpeed = 10;
             FiredRockets = new List<Rocket>();
             FiredBullets = new List<MashineGun>();
          //Set start-up positions

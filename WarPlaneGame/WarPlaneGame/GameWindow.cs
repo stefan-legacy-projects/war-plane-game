@@ -26,7 +26,7 @@ namespace WarPlaneGame
         public int xBam;
         public int yBam;
         public Sounds sounds;
-
+        public int TimeSpent;
         //Public constructor
         public GameWindow()
         {
@@ -49,9 +49,14 @@ namespace WarPlaneGame
             Blast = false;
             Images = new BlastImages();
             scoore = new HighScore();
+            ScoreLabel.Text = "High Score: " + scoore.getScore().ToString();
+            RemainingLifes.Text = "Player Lifes: " + playerPlane.getPlayerLife().ToString();
             //Set the sounds
             sounds = new Sounds();
             sounds.playMainMusic();
+            GameTimer.Enabled = true;
+            TimeSpent = 0;
+          
         }
 
         // Function to fill the list with enemy planes
@@ -77,6 +82,7 @@ namespace WarPlaneGame
                 playerPlane.moveLeft();
             if (e.KeyCode == Keys.Up)
                 playerPlane.moveUp();
+            
             if (e.KeyCode == Keys.Down)
                 playerPlane.moveDown();
         }
@@ -84,67 +90,46 @@ namespace WarPlaneGame
         //Function to paint on the FORM (repaint also)
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
-            Thread.Sleep(10);
-            if (playerPlane.getPlayerLife() != 0)
-            {
                 // Clear the screen
                 e.Graphics.Clear(Color.White);
                 // Set the Background
-                e.Graphics.DrawImage(BG.getImg(), BG.getX(), BG.getY());
-                BG.BackGroundMove();
-                // Set the upper Background
-                e.Graphics.DrawImage(BG1.getImg(), BG1.getX(), BG1.getY());
-                BG1.BackGroundMove();
+               e.Graphics.DrawImage(BG.getImg(), BG.getX(), BG.getY());
+               // Set the upper Background
+               e.Graphics.DrawImage(BG1.getImg(), BG1.getX(), BG1.getY());
                 //Draw the player Rockets 
                 for (int i = 0; i < playerPlane.getFiredRocekts().Count; i++)
                 {
                     e.Graphics.DrawImage(playerPlane.getFiredRocekts()[i].getImage(), playerPlane.getFiredRocekts()[i].getX(), playerPlane.getFiredRocekts()[i].getY());
-
                 }
-                // Move the rockets
-                moveTheRocekts();
                 //Draw Bullets
                 for (int i = 0; i < playerPlane.getFiredBullets().Count; i++)
                 {
                     e.Graphics.DrawImage(playerPlane.getFiredBullets()[i].getImage(), playerPlane.getFiredBullets()[i].getX(), playerPlane.getFiredBullets()[i].getY());
-
                 }
-                //Move the bullets
-                moveTheBullets();
-                // Draw the player plane 
-                e.Graphics.DrawImage(playerPlane.getImage(), playerPlane.getX(), playerPlane.getY());
-                // Draw enemy plain at last possition             
+               // Draw enemy plain at last possition             
                 for (int i = 0; i < Planes.Count; i++)
                 {
                     e.Graphics.DrawImage(Planes[i].getImg(), Planes[i].getX(), Planes[i].getY());
                 }
-                // Move the plain
-                EnemyPlaneMove();
-                if (Blast)
+               if (Blast)
                 {
                     Blast = false;
                     e.Graphics.DrawImage(Images.getWinImg(), xBam, yBam);
                 }
-                this.Invalidate();
-            }
-            else
-            {
-                e.Graphics.DrawImage(BG.getImg(), BG.getX(), BG.getY());
-                e.Graphics.DrawImage(BG1.getImg(), BG1.getX(), BG1.getY());
-                for (int i = 0; i < Planes.Count; i++)
-                {
-                    e.Graphics.DrawImage(Planes[i].getImg(), Planes[i].getX(), Planes[i].getY());
-                }
-                e.Graphics.DrawImage(Images.getLoseImg(), playerPlane.getX(), playerPlane.getY());
-                for (int i = 0; i < playerPlane.getFiredRocekts().Count; i++)
-                {
-                    e.Graphics.DrawImage(playerPlane.getFiredRocekts()[i].getImage(), playerPlane.getFiredRocekts()[i].getX(), playerPlane.getFiredRocekts()[i].getY());
+              //Check if dead to draw the last image
+               if (playerPlane.getPlayerLife() == 0)
+               {
+                   e.Graphics.DrawImage(Images.getLoseImg(), playerPlane.getX(), playerPlane.getY());
 
-                }
-                sounds.playGameOverMusic();
-               
-
-            }
+                   sounds.playGameOverMusic();
+               }
+               else
+               {
+                   // Draw the player plane 
+                   e.Graphics.DrawImage(playerPlane.getImage(), playerPlane.getX(), playerPlane.getY());
+               }
+                
+            
 
         }
 
@@ -165,6 +150,7 @@ namespace WarPlaneGame
 
                     Planes.Remove(Planes[i]);
                     playerPlane.setPlayerLife(playerPlane.getPlayerLife() - 1);
+                    RemainingLifes.Text = "Player Lifes: " + playerPlane.getPlayerLife().ToString();
                 }
             }
             if (Planes.Count < 10) fillList();
@@ -260,6 +246,29 @@ namespace WarPlaneGame
                 playerPlane.fireBullet();
                 sounds.playMashineGun();
             }
+        }
+
+        private void GameTimer_Start(object sender, EventArgs e)
+        {
+            Invalidate();
+            BG.BackGroundMove();
+            BG1.BackGroundMove();
+            moveTheRocekts();
+            moveTheBullets();
+            EnemyPlaneMove();
+            ScoreLabel.Text = "High Score: " + scoore.getScore().ToString();
+            if (playerPlane.getPlayerLife() == 0)
+            {
+                GameTimer.Enabled = false;
+                PlayerTime.Enabled = false;
+
+                MessageBox.Show("dasd "+TimeSpent);
+            }
+        }
+
+        private void CountTime(object sender, EventArgs e)
+        {
+            TimeSpent++;
         }
     }
 }

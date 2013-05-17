@@ -9,52 +9,53 @@ namespace WarPlaneGame
 {
     public class Sounds
     {
-        private SoundPlayer IntroMusic;
+       /* private SoundPlayer IntroMusic;
         private SoundPlayer MainMusic;
         private SoundPlayer RocketMusic;
         private SoundPlayer GameOverMusic;
         private SoundPlayer MashinegunPlayer;
         private SoundPlayer Explosions;
-        
-        
+      */
+       // var player = new WMPLib.WindowsMediaPlayer();
+      
         public Sounds()
         {
-            IntroMusic = new SoundPlayer("D:\\documents\\visual studio 2012\\Projects\\WarPlaneGame\\WarPlaneGame\\Resources\\sounds\\Intro.wav");
+      /*      IntroMusic = new SoundPlayer("D:\\documents\\visual studio 2012\\Projects\\WarPlaneGame\\WarPlaneGame\\Resources\\sounds\\Intro.wav");
             MainMusic = new SoundPlayer ("D:\\documents\\visual studio 2012\\Projects\\WarPlaneGame\\WarPlaneGame\\Resources\\sounds\\bgSound.wav");
             Explosions = new SoundPlayer("D:\\documents\\visual studio 2012\\Projects\\WarPlaneGame\\WarPlaneGame\\Resources\\sounds\\Explosion.wav");
             RocketMusic = new SoundPlayer("D:\\documents\\visual studio 2012\\Projects\\WarPlaneGame\\WarPlaneGame\\Resources\\sounds\\Rocket.wav");
             GameOverMusic = new SoundPlayer("D:\\documents\\visual studio 2012\\Projects\\WarPlaneGame\\WarPlaneGame\\Resources\\sounds\\GameOver.wav");
             MashinegunPlayer = new SoundPlayer("D:\\documents\\visual studio 2012\\Projects\\WarPlaneGame\\WarPlaneGame\\Resources\\sounds\\MashineGun.wav");
-            
+         */   
         }
         public void playMainMusic()
         {
-           MainMusic.PlayLooping();
+        //   MainMusic.PlayLooping();
         }
         public void playGameOverMusic()
         {
-            MainMusic.Stop();
-            GameOverMusic.Play();
+            //     MainMusic.Stop();
+            //     GameOverMusic.Play();
         }
         public void playExplosions()
         {
-            MainMusic.Stop();
-           Explosions.Play();
-           MainMusic.PlayLooping();
+            //     MainMusic.Stop();
+            //     Explosions.Play();
+            //      MainMusic.PlayLooping();
         }
         public void playRocket()
         {
-            MainMusic.Stop();
-            RocketMusic.Play();
-            MainMusic.PlayLooping();
+            //     MainMusic.Stop();
+            //      RocketMusic.Play();
+            //      MainMusic.PlayLooping();
         }
         public void playIntro()
         {
-            IntroMusic.PlayLooping();
+            //      IntroMusic.PlayLooping();
         }
         public void playMashineGun()
         {
-            MashinegunPlayer.Play();
+            //      MashinegunPlayer.Play();
         }
        
     }

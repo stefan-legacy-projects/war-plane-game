@@ -19,7 +19,7 @@ namespace WarPlaneGame
             enemyPlaneImg = new Bitmap("D:\\documents\\visual studio 2012\\Projects\\WarPlaneGame\\WarPlaneGame\\Resources\\img\\Enemy1-small.png");
             X = x; 
             Y = y;
-            speed = 5;
+            speed = 5;  // Old Value 5
             life =2 ;
         }
 // Move the Plain
