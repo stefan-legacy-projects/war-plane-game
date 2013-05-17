@@ -18,7 +18,7 @@ namespace WarPlaneGame
 
         public MashineGun(int x, int y)
         {
-            Bullet = new Bitmap("D:\\documents\\visual studio 2012\\Projects\\WarPlaneGame\\WarPlaneGame\\Resources\\img\\Bullet.png");
+           Bullet = new Bitmap(Properties.Resources.Bullet);
             X = x;
             Y = y;
             speed = 30;

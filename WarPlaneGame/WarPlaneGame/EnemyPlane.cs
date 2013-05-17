@@ -16,10 +16,10 @@ namespace WarPlaneGame
 
         public EnemyPlane(int x, int y)
         {
-            enemyPlaneImg = new Bitmap("D:\\documents\\visual studio 2012\\Projects\\WarPlaneGame\\WarPlaneGame\\Resources\\img\\Enemy1-small.png");
+           enemyPlaneImg = new Bitmap(Properties.Resources.Enemy1_small);
             X = x; 
             Y = y;
-            speed = 5;  // Old Value 5
+            speed = 6;  // Old Value 5
             life =2 ;
         }
 // Move the Plain
@@ -36,7 +36,7 @@ namespace WarPlaneGame
         public void LoseLife()
         {
             life = life - 1;
-            enemyPlaneImg = new Bitmap("D:\\documents\\visual studio 2012\\Projects\\WarPlaneGame\\WarPlaneGame\\Resources\\img\\EnemyBurn.png"); 
+            enemyPlaneImg = new Bitmap(Properties.Resources.EnemyBurn);
         }
 
         //Getters and Setters

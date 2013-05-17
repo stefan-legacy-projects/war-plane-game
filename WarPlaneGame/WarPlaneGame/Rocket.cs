@@ -18,7 +18,7 @@ namespace WarPlaneGame
 
         public Rocket(int x, int y)
         {
-            rocketImage = new Bitmap("D:\\documents\\visual studio 2012\\Projects\\WarPlaneGame\\WarPlaneGame\\Resources\\img\\Rocket-V2.png");
+            rocketImage = new Bitmap(Properties.Resources.Rocket_V2);
             X = x;
             Y = y;
             speed = 20;

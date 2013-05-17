@@ -127,6 +127,87 @@
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sounds\bgSound.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sounds\Explosion.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sounds\GameOver.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sounds\Intro.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sounds\MashineGun.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sounds\Rocket.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\back1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\Bam.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\Bullet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\cloud1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\cloud2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\Enemy1-small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\EnemyBurn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\FireBullets.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\FireRockets.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\flame.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\IntroBG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\MIG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\MIG-small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\MoveDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\MoveLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\MoveRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\MoveUp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\Objects.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\Pow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\Rocket-V2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\Z.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

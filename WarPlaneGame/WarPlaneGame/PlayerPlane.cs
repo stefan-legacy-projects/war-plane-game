@@ -25,8 +25,8 @@ namespace WarPlaneGame
         public PlayerPlane(int formWidth,int formHeight)  
         {
           // Set Image of the Player Plnae
-            playerPlaneImg = new Bitmap("D:\\documents\\visual studio 2012\\Projects\\WarPlaneGame\\WarPlaneGame\\Resources\\img\\MIG-small.png");
-         // Set Player Life and Speed and List Active Rockets
+            playerPlaneImg = new Bitmap(Properties.Resources.MIG_small);
+            // Set Player Life and Speed and List Active Rockets
             playerLife = 5;
             playerSpeed = 10;
             FiredRockets = new List<Rocket>();

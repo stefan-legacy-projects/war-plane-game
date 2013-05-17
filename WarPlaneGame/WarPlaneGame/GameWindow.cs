@@ -93,9 +93,9 @@ namespace WarPlaneGame
                 // Clear the screen
                 e.Graphics.Clear(Color.White);
                 // Set the Background
-               e.Graphics.DrawImage(BG.getImg(), BG.getX(), BG.getY());
+              e.Graphics.DrawImage(BG.getImg(), BG.getX(), BG.getY());
                // Set the upper Background
-               e.Graphics.DrawImage(BG1.getImg(), BG1.getX(), BG1.getY());
+              e.Graphics.DrawImage(BG1.getImg(), BG1.getX(), BG1.getY());
                 //Draw the player Rockets 
                 for (int i = 0; i < playerPlane.getFiredRocekts().Count; i++)
                 {
@@ -153,7 +153,7 @@ namespace WarPlaneGame
                     RemainingLifes.Text = "Player Lifes: " + playerPlane.getPlayerLife().ToString();
                 }
             }
-            if (Planes.Count < 10) fillList();
+           if (Planes.Count < 10) fillList();
 
         }
         //Function to move the Player Rockets
@@ -219,7 +219,7 @@ namespace WarPlaneGame
                             if (Planes[y].LIFE() <= 0)
                             {
                                 Planes.Remove(Planes[y]);
-                                fillList();
+                               fillList();
                                 scoore.UpdateBulletScore();
                                 Blast = true;
                                 xBam = r1.X;

@@ -12,8 +12,8 @@ namespace WarPlaneGame
         private Bitmap loseImg;
         public BlastImages()
         {
-            loseImg = new Bitmap("D:\\documents\\visual studio 2012\\Projects\\WarPlaneGame\\WarPlaneGame\\Resources\\img\\Pow.png");
-            winImg = new Bitmap("D:\\documents\\visual studio 2012\\Projects\\WarPlaneGame\\WarPlaneGame\\Resources\\img\\Bam.png");
+             loseImg = new Bitmap(Properties.Resources.Pow);
+             winImg = new Bitmap(Properties.Resources.Bam);
         }
         public Bitmap getWinImg()
         {

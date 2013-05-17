@@ -14,8 +14,8 @@ namespace WarPlaneGame
         private int Y;
         public BackGround(int y)
         {
-            Layer1 = new Bitmap("D:\\documents\\visual studio 2012\\Projects\\WarPlaneGame\\WarPlaneGame\\Resources\\img\\back1.png");
-            Layer1speed = 3;
+            Layer1 = new Bitmap(Properties.Resources.back1);
+            Layer1speed = 2;
             X = 0;
             Y = y;
         }
