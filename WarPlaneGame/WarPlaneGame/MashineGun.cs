@@ -29,6 +29,10 @@ namespace WarPlaneGame
             Y = Y - speed;
            
         }
+        public void Draw(Graphics g)
+        {
+            g.DrawImage(Bullet, X, Y);
+        }
 
 
         //Getter and Setters

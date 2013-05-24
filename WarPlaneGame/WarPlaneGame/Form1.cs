@@ -28,7 +28,9 @@ namespace WarPlaneGame
         {
             GameWindow game = new GameWindow();
             game.ShowDialog();
-        }
+            game.freezScreen();
+            sounds.playIntro();
+       }
 
         private void HowToPlay_Click(object sender, EventArgs e)
         {

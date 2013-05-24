@@ -49,6 +49,8 @@
   <ItemGroup>
     <Compile Include="BackGround.cs" />
     <Compile Include="BlastImages.cs" />
+    <Compile Include="Boss.cs" />
+    <Compile Include="cloud.cs" />
     <Compile Include="Collision.cs" />
     <Compile Include="EnemyPlane.cs" />
     <Compile Include="Form1.cs">
@@ -207,6 +209,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\img\Z.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\jetPlane.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\jetPlane2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\jetPlaneBurn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\boss.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\bossOnFlame1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\bossOnFlame2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\bossOnFlame3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\bossOnFlame4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sounds\missionComplete.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
