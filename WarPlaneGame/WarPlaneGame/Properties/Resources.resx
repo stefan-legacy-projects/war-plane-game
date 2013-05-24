@@ -202,4 +202,31 @@
   <data name="Z" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\img\Z.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="boss" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\img\boss.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jetPlane" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\img\jetPlane.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jetPlane2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\img\jetPlane2.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jetPlaneBurn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\img\jetPlaneBurn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bossOnFlame1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\img\bossOnFlame1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bossOnFlame2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\img\bossOnFlame2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bossOnFlame3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\img\bossOnFlame3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bossOnFlame4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\img\bossOnFlame4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="missionComplete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sounds\missionComplete.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

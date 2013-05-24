@@ -13,10 +13,14 @@ namespace WarPlaneGame
         private int Y;
         private int speed;
         private int life;
-
-        public EnemyPlane(int x, int y)
+        private int T;
+        public EnemyPlane(int x, int y,int t)
         {
-           enemyPlaneImg = new Bitmap(Properties.Resources.Enemy1_small);
+            T = t;
+            if(t==1)
+            enemyPlaneImg = new Bitmap(Properties.Resources.Enemy1_small);
+            else
+            enemyPlaneImg = new Bitmap(Properties.Resources.jetPlane);
             X = x; 
             Y = y;
             speed = 6;  // Old Value 5
@@ -36,7 +40,12 @@ namespace WarPlaneGame
         public void LoseLife()
         {
             life = life - 1;
-            enemyPlaneImg = new Bitmap(Properties.Resources.EnemyBurn);
+           if(T==1) enemyPlaneImg = new Bitmap(Properties.Resources.EnemyBurn);
+           else enemyPlaneImg = new Bitmap(Properties.Resources.jetPlaneBurn);
+        }
+        public void Draw(Graphics g)
+        {
+            g.DrawImage(enemyPlaneImg, X, Y);
         }
 
         //Getters and Setters

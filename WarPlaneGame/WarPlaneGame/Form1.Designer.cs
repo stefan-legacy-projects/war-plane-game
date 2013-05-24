@@ -93,7 +93,9 @@
             this.Controls.Add(this.HowToPlay);
             this.Controls.Add(this.NewGame);
             this.Controls.Add(this.ScoreLabel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "War Plane Game";
             this.ResumeLayout(false);
