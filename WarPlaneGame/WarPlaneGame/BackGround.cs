@@ -30,11 +30,6 @@ namespace WarPlaneGame
 
         }
 
-        public void Draw(Graphics g)
-        {
-            g.DrawImage(Layer1, X, Y);
-        }
-
         public int getX()
         {
         return X;

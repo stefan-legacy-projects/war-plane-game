@@ -38,10 +38,6 @@ namespace WarPlaneGame
             maxWidth = formWidth - playerPlaneImg.Width-5;
             maxHeight = formHeight - playerPlaneImg.Height;
         }
-        public void loseLife()
-        {
-            playerLife--;
-        }
 
         // Functions to move the player on the screen
         public void moveLeft()
@@ -85,10 +81,7 @@ namespace WarPlaneGame
         {
             FiredBullets.Remove(FiredBullets[i]);
         }
-        public void Draw(Graphics g)
-        {
-            g.DrawImage(playerPlaneImg, X, Y);
-        }
+
 
         // Getters and Setters
         public int getX()

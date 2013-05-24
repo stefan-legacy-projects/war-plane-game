@@ -23,7 +23,6 @@ namespace WarPlaneGame
         {
             return loseImg;
         }
-        
 
     }
 }

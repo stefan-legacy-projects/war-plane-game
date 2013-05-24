@@ -29,10 +29,7 @@ namespace WarPlaneGame
             Y = Y - speed;
            
         }
-        public void Draw(Graphics g)
-        {
-            g.DrawImage(rocketImage, X, Y);
-        }
+
 
         //Getter and Setters
         public int getSpeed()
@@ -50,11 +47,6 @@ namespace WarPlaneGame
         public int getY()
         {
             return Y;
-        }
-        public void Reset()
-        {
-            speed = -6;
-            rocketImage.RotateFlip(RotateFlipType.Rotate180FlipNone);
         }
     }
 }
