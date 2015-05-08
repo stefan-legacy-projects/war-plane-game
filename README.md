@@ -8,19 +8,19 @@ WarPlaneGame
 - - -
 <p>Изгледот на играта:
 <ul>
-<li> Главниот екран:
+<li> Главниот екран: <br />
 <img src="http://i.imgur.com/GvZBmo0.png" alt="Main Screen" /> </li>
-<li> HowToPlay екранот: 
+<li> HowToPlay екранот: <br />
 <img src="http://i.imgur.com/zU4rI8D.png" alt="HowToPlay Screen"/> </li>
-<li> Game екранот:  (без главниот непријател) 
+<li> Game екранот:  (без главниот непријател) <br />
 <img src="http://i.imgur.com/w62JHFt.png" alt="Game Screen"/> </li>
-<li> Game екранот:  (со главниот непријател)
+<li> Game екранот:  (со главниот непријател)<br />
 <img src="http://i.imgur.com/OWb5MaG.png" alt="Game Screen"/> </li>
-<li> <p> GameOver и YouWon екраните: 
+<li> <p> GameOver и YouWon екраните: <br />
 <img src="http://i.imgur.com/Vqel1fz.png" alt="GameOver Screen"/> 
 <img src="http://i.imgur.com/2oUdvpe.png" alt="GameOver Screen"/> 
 </li>
-</ul> <br />
+</ul> 
 Правилата на играта се следни:
 <ul>
 <li>Имате 5 живота и при секој судар со противнички авион губите по еден живот. Исто така губите по еден живот доколку ве погоди и главниот непријател. Ако ги изгубите животите ... вие сте изгубиле ! </li>
